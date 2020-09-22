@@ -18,7 +18,7 @@ class RoomRepository
 
   def find(id)
     # Return the first Room whose `id` matches `id`
-    @rooms.find { |id| id == id }
+    @rooms.find { |room| room.id == id }
   end
 
   private
